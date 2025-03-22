@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: Bricolage Grotesque, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenedor-general {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem 8rem;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0rem;
+    border: 1px solid #181818;
+}
+
+header h1{
+    font-size: 3em;
+    margin: 1rem 0rem;
+}
+
+header h2{
+    font-size: 2em;
+}
+
+
+
+.foto-perfil {
+    border-radius: 50%;
+    box-shadow: 0px 0px 32px #181818;
+}
+
+.contenedor-titulo-datos {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 0.7rem;
+}
+
+.contenedor-titulo {
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.contenedor-titulo > h1 {
+    text-align: center;
+}
+
+.contenedor-titulo > h2 {
+    text-align: center;
+}
+
+/* ------ CONTENEDOR MEDIO ------ */
+
+.contenedor-medio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+aside {
+    padding: 1rem 2rem;
+    border: 1px solid #181818;
+    flex-basis: 48rem;
+}
+
+.habilidades{
+    padding: 1rem 2rem;
+}
+
+
+
+aside li {
+    margin: 0.5rem 0rem;
+}
+
+main {
+    padding: 1rem 2rem;
+    border: 1px solid #181818;
+
+}
+
+main li {
+    padding: .5rem 0rem;
+    line-height: 1.4rem;
+
+}
+
+
+
+.perfil-profesional {
+    padding: 1rem 1rem;
+}
+
+.perfil-profesional p{
+    padding: .5rem 0rem;
+    line-height: 1.4rem;
+}
+
+
+.experiencia-profesional {
+    padding: 1rem 1rem;
+
+}
+
+.experiencia-profesional p{
+    padding: .5rem 0rem;
+}
+
+.formacion {
+    padding: 1rem 1rem;
+
+}
+
+.proyectos {
+    padding: 1rem 1rem;
+
+}
+
+footer{
+    border: 1px solid #181818;
+    display: flex;
+    flex-flow: column ;
+}
+
+footer a{
+    text-decoration: none;
+    color: #01579b;
+}
+
+footer span{
+    font-weight: bold;
+}
+.contenedor-datos {
+    padding: 1rem 2rem;
+}
+
+
+.contenedor-datos li {
+    list-style: none;
+    padding: .5rem 0rem;
+}
+
+@media (width < 1024px) {
+    .contenedor-general{
+        padding: 1rem 4rem;
+    }
+    header {
+        flex-direction: column;
+    }
+
+    .contenedor-medio{
+        flex-direction: column;
+    }
+    aside{
+        flex-basis: auto;
+    }
+
+    main{
+        flex-basis: auto;
+    }
+
+    footer{
+        flex-basis: auto;
+    }
+
+    
+}
+
+@media (width < 480px) {
+
+    .contenedor-general{
+        padding: 1rem 1rem;
+    }
+    
+
+
+}
