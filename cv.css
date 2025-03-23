@@ -7,13 +7,70 @@
 }
 
 body {
-    background-color: antiquewhite;
-    font-family: Bricolage Grotesque, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8daef;
+    font-family: Bricolage Grotesque, "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
+    line-height: 1.5em;
 }
 .contenedor-general {
     display: flex;
     flex-flow: column;
     padding: 1rem 8rem;
+}
+
+h3 {
+    text-decoration: underline;
+    color: #4a148c;
+}
+
+nav {
+    display: flex;
+    background-color: #f3e5f5;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    border-bottom: 1px solid #181818;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 16px #4a148c77;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+nav > h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #4a148c;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 0.3rem;
+}
+
+nav li {
+    list-style: none;
+}
+nav li > a {
+    padding: 0.3rem 0.5rem;
+    width: 100%;
+    display: block;
+}
+nav li > a:hover {
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4a148c;
+    border-radius: 1rem;
+    background-color: #e1bee7;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
 }
 
 header {
@@ -22,45 +79,62 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 1rem 0rem;
-    border: 1px solid #181818;
+    border-bottom: 1px solid #181818;
+    border-radius: 1rem;
 }
 
-header h1{
-    font-size: 3em;
-    margin: 1rem 0rem;
+header h1 {
+    color: #4a148c;
+    padding: 1rem;
 }
 
-header h2{
-    font-size: 2em;
+header h2 {
+    color: #6a1b9a;
 }
 
-
+header fieldset {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
 
 .foto-perfil {
     border-radius: 50%;
-    box-shadow: 0px 0px 32px #181818;
-}
-
-.contenedor-titulo-datos {
-    display: flex;
-    flex-direction: column;
-    padding: 0.3rem 0.7rem;
+    box-shadow: 0px 0px 16px #4a148c77;
 }
 
 .contenedor-titulo {
     padding: 0.5rem 1rem;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: baseline;
+    flex-grow: 1;
+    flex-flow: column;
+    justify-content: space-around;
     align-items: center;
 }
 
 .contenedor-titulo > h1 {
     text-align: center;
+    line-height: 1.4em;
+    font-size: 2.5em;
+
+    
 }
 
 .contenedor-titulo > h2 {
     text-align: center;
+}
+
+@media (width < 1340px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    nav > ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
 
 /* ------ CONTENEDOR MEDIO ------ */
@@ -71,120 +145,124 @@ header h2{
     justify-content: center;
 }
 aside {
-    padding: 1rem 2rem;
-    border: 1px solid #181818;
-    flex-basis: 48rem;
+    padding: 1rem 1rem;
+    border-right: 1px solid #181818;
+    border-radius: 1rem;
+
+    flex-basis: 50rem;
+}
+.habilidades {
+    height: 100%;
+}
+.habilidades fieldset {
+    height: 100%;
 }
 
-.habilidades{
-    padding: 1rem 2rem;
+aside > section > fieldset > ul > li {
+    margin: 1rem 0rem;
 }
-
-
-
-aside li {
+aside > section > fieldset > ul > li > ul > li {
     margin: 0.5rem 0rem;
 }
 
 main {
-    padding: 1rem 2rem;
-    border: 1px solid #181818;
-
+    border-left: 1px solid #181818;
+    border-radius: 1rem;
 }
 
 main li {
-    padding: .5rem 0rem;
-    line-height: 1.4rem;
-
+    padding: 0.1rem 0rem;
 }
 
+fieldset {
+    box-shadow: 0px 0px 16px #4a148c77;
 
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: #f3e5f5;
+}
+
+legend {
+    font-weight: bold;
+    padding: 1rem;
+}
 
 .perfil-profesional {
     padding: 1rem 1rem;
 }
 
-.perfil-profesional p{
-    padding: .5rem 0rem;
-    line-height: 1.4rem;
+.perfil-profesional p {
+    padding: 0.5rem 0rem;
 }
-
 
 .experiencia-profesional {
     padding: 1rem 1rem;
-
 }
 
-.experiencia-profesional p{
-    padding: .5rem 0rem;
+.experiencia-profesional p {
+    padding: 0.5rem 0rem;
 }
 
 .formacion {
     padding: 1rem 1rem;
-
 }
 
 .proyectos {
     padding: 1rem 1rem;
-
 }
 
-footer{
-    border: 1px solid #181818;
+footer {
     display: flex;
-    flex-flow: column ;
+    flex-flow: column;
+    border-top: 1px solid #181818;
+    border-radius: 1rem;
+    padding: 1rem 0rem;
 }
 
-footer a{
+footer a {
     text-decoration: none;
-    color: #01579b;
+    color: #0d47a1;
 }
 
-footer span{
+footer a:visited {
+    color: #4a148c;
+}
+
+footer span {
     font-weight: bold;
 }
-.contenedor-datos {
-    padding: 1rem 2rem;
-}
-
 
 .contenedor-datos li {
     list-style: none;
-    padding: .5rem 0rem;
+    padding: 0.5rem 0rem;
 }
 
-@media (width < 1024px) {
-    .contenedor-general{
+@media (width <= 1024px) {
+    .contenedor-general {
         padding: 1rem 4rem;
     }
     header {
         flex-direction: column;
     }
 
-    .contenedor-medio{
+    .contenedor-medio {
         flex-direction: column;
     }
-    aside{
+    aside {
         flex-basis: auto;
     }
 
-    main{
+    main {
         flex-basis: auto;
     }
 
-    footer{
+    footer {
         flex-basis: auto;
     }
-
-    
 }
 
 @media (width < 480px) {
-
-    .contenedor-general{
+    .contenedor-general {
         padding: 1rem 1rem;
     }
-    
-
-
 }
