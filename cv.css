@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+
+:root {
+    font-size: 100%;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -9,65 +13,83 @@ html {
 }
 
 body {
-    background-color: #e8daef;
+    background-color: #cfd8dc;
     font-family: Bricolage Grotesque, "Segoe UI", Tahoma, Geneva, Verdana,
-        sans-serif;
+        sans-serif, System-UI;
     line-height: 1.5em;
+    min-height: 100vh;
 }
 .contenedor-general {
     display: flex;
     flex-flow: column;
-    padding: 1rem 8rem;
+    padding: 0rem 8rem 2rem 8rem;
 }
 
 h3 {
     text-decoration: underline;
-    color: #4a148c;
+    color: #263238;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+}
+h4 {
+    text-decoration: underline;
+    color: #263238;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
 }
 
 nav {
     display: flex;
-    background-color: #f3e5f5;
-    justify-content: space-between;
+    background-color: #eceff1;
+    justify-content: space-around;
     align-items: center;
     align-content: flex-end;
     border-bottom: 1px solid #181818;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 16px #4a148c77;
-    gap: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0px 0px 16px #26323877;
+
     width: 100%;
     padding: 1rem;
     text-align: center;
+   
+   
 }
 
 nav > h2 {
     font-size: 2rem;
     font-weight: 800;
-    color: #4a148c;
+    padding: 1rem;
 }
 
 nav ul {
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    gap: 0.3rem;
 }
 
 nav li {
     list-style: none;
 }
 nav li > a {
-    padding: 0.3rem 0.5rem;
+    padding: 1rem;
     width: 100%;
     display: block;
+    border-radius: 1rem;
+    list-style: none;
 }
 nav li > a:hover {
-    list-style: none;
     font-size: 1.1rem;
     font-weight: bold;
-    color: #4a148c;
-    border-radius: 1rem;
-    background-color: #e1bee7;
+    color: #263238;
+    background-color: #cfd8dc;
+    transition: 0.3s;
+}
+nav li > a:active {
+
+    color: #607d8b;
+
 }
 
 nav a {
@@ -81,31 +103,40 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem 0rem;
+    padding: 1rem 0.1rem;
     border-bottom: 1px solid #181818;
     border-radius: 1rem;
 }
 
-header h1 {
-    color: #4a148c;
+header .contenedor-titulo > h1 {
     padding: 1rem;
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
-header h2 {
-    color: #6a1b9a;
+header .contenedor-titulo > h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 2rem;
 }
 
-header .card {
+header > .card {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: stretch;
+    background-image: linear-gradient(0deg, #eceff1bb, #eceff1bb),
+        url("17 1920.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .foto-perfil {
     border-radius: 50%;
-    box-shadow: 0px 0px 16px #4a148c77;
+    box-shadow: 0px 0px 16px #26323877;
 }
 
 .contenedor-titulo {
@@ -128,6 +159,7 @@ header .card {
 }
 
 @media (width < 1340px) {
+   
     nav {
         flex-direction: column;
         align-items: stretch;
@@ -160,10 +192,13 @@ aside {
 }
 
 aside > section > .card > ul > li {
-    margin: 1rem 0rem;
+    margin: 1rem 0.1rem;
+}
+aside li > span {
+    font-weight: bold;
 }
 aside > section > .card > ul > li > ul > li {
-    margin: 0.5rem 0rem;
+    margin: 0.5rem 0.1rem;
 }
 
 main {
@@ -173,15 +208,15 @@ main {
 }
 
 main li {
-    padding: 0.1rem 0rem;
+    padding: 0.1rem 0.1rem;
 }
 
 .card {
-    box-shadow: 0px 0px 16px #4a148c77;
+    box-shadow: 0px 0px 16px #26323877;
 
     border-radius: 1rem;
     padding: 1rem 2rem;
-    background-color: #f3e5f5;
+    background-color: #eceff1;
 }
 
 legend {
@@ -194,7 +229,7 @@ legend {
 }
 
 .perfil-profesional p {
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0.1rem;
 }
 
 .experiencia-profesional {
@@ -202,7 +237,7 @@ legend {
 }
 
 .experiencia-profesional p {
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0.1rem;
 }
 
 .formacion {
@@ -218,7 +253,7 @@ footer {
     flex-flow: column;
     border-top: 1px solid #181818;
     border-radius: 1rem;
-    padding: 1rem 0rem;
+    padding: 1rem 0.1rem;
 }
 
 footer a {
@@ -236,12 +271,12 @@ footer span {
 
 .contenedor-datos li {
     list-style: none;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0.1rem;
 }
 
 @media (width <= 1024px) {
     .contenedor-general {
-        padding: 1rem 4rem;
+        padding: 0rem 4rem 1rem 4rem;
     }
     header {
         flex-direction: column;
@@ -265,6 +300,6 @@ footer span {
 
 @media (width < 480px) {
     .contenedor-general {
-        padding: 1rem 1rem;
+        padding: 0rem 2rem 1rem 2rem;
     }
 }

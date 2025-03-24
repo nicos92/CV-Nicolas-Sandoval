@@ -3,7 +3,8 @@
 body {
 /*background: linear-gradient(-105deg, #ee7752, #e73c7e, #FF0000, #23d5ab);*/
 	/* background: linear-gradient(-105deg, #353940, #222222,#353940, #222222); */
-	background: linear-gradient(-105deg, #f5d9f0, #f2f2f2,#f5d9f0, #f2f2f2);
+	/* background: linear-gradient(-105deg, #f5d9f0, #f2f2f2,#f5d9f0, #f2f2f2); */
+	background: linear-gradient(-105deg, #eceff1, #cfd8dc,#b0bec5, #cfd8dc);
 
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;

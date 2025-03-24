@@ -51,7 +51,7 @@ p a {
 li,
 menu,
 summary {
-    list-style: none;
+    /* list-style: none; */
 }
 ol {
     counter-reset: revert;
@@ -149,9 +149,9 @@ body {
     min-height: 100vh;
     color: inherit;
     line-height: 1.5em;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
+    /* -webkit-hyphens: auto; */
+    /* -ms-hyphens: auto; */
+    /* hyphens: auto; */
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
