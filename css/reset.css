@@ -51,7 +51,7 @@ p a {
 li,
 menu,
 summary {
-    /* list-style: none; */
+    list-style: none;
 }
 ol {
     counter-reset: revert;
