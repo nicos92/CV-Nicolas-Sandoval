@@ -13,7 +13,7 @@
     <script defer src="../js/buttonfloattop.js"></script>
 </head>
 
-<body>
+<body id="body">
     <div class="contenedor-general">
 
         <nav id="logo" class="card__box-shadow">
@@ -32,13 +32,13 @@
                 <li><a href="#experiencia-profesional">Experiencia</a></li>
                 <li><a href="#formacion">Formación</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#datos-personales">Datos Personales</a></li>
+                <li><a href="#redes-sociales">Redes Sociales</a></li>
             </ul>
 
         </nav>
 
 
-        <header>
+        <header class="section">
 
             <div class="card card__box-shadow">
                 <div class="contenedor-img card__box-shadow"><img src="../img/NSS.jpeg"
@@ -56,7 +56,7 @@
         <div class="contenedor-medio">
             <aside>
 
-                <section id="habilidades" class="habilidades">
+                <section id="habilidades" class="habilidades section ">
                     <div class="card card__box-shadow">
                         <h3>Habilidades</h3>
                         <ul>
@@ -85,7 +85,7 @@
             </aside>
             <main>
 
-                <section id="perfil-profesional" class="main__card">
+                <section id="perfil-profesional" class="main__card section ">
                     <div class="card card__box-shadow">
                         <h3>Perfil Profesional</h3>
                         <p>Analista de tecnologías de la información con amplios conocimientos técnicos. Participé en
@@ -96,7 +96,7 @@
                             con más de 3 años de experiencia en el rubro.</p>
                     </div>
                 </section>
-                <section id="experiencia-profesional" class="main__card">
+                <section id="experiencia-profesional" class="main__card section ">
                     <div class="card card__box-shadow">
                         <h3>Experiencia Profesional</h3>
                         <ul>
@@ -123,7 +123,7 @@
                         </ul>
                     </div>
                 </section>
-                <section id="formacion" class="main__card">
+                <section id="formacion" class="main__card section ">
                     <div class="card card__box-shadow">
 
                         <h3>
@@ -146,7 +146,7 @@
                         </ul>
                     </div>
                 </section>
-                <section id="proyectos" class="main__card">
+                <section id="proyectos" class="main__card section ">
                     <div class="card card__box-shadow">
                         <h3>Proyectos</h3>
                         <ul>
@@ -161,14 +161,10 @@
             </main>
         </div>
         <footer>
-            <section id="redes-sociales" class="contenedor-redes-sociales">
+            <section id="redes-sociales" class="contenedor-redes-sociales section">
                 <div class="card card__box-shadow">
                     <h3>Redes Sociales</h3>
                     <div class="lista-redes-sociales">
-
-
-                       
-
                         <a href="https://www.youtube.com/@Nicolas.Salomon.Sandoval" target="_blank"
                             rel="nofollow noreferrer noopener" class="youtube flex-row-center">
                             <svg width="48px" height="48px" viewBox="0 -3 20 20" version="1.1"
@@ -268,13 +264,14 @@
 
                 </div>
             </section>
-            <section class="copyright">
-                <p class="copyright__content">&copy; 2025 NicoS92, Inc.</p>
-            </section>
+            
 
         </footer>
     </div>
-    <button class="button"><a href="#logo">
+    <section class="copyright">
+        <p class="copyright__content">&copy; 2025 NicoS92, Inc.</p>
+    </section>
+    <button id="btnSubir" class="button">
             <svg width="32px" viewBox="-1.6 -1.6 19.20 19.20"  xmlns="http://www.w3.org/2000/svg">
 
                 <g id="SVGRepo_bgCarrier" stroke-width="0" />
@@ -287,10 +284,27 @@
                 </g>
 
             </svg>
-        </a>
+        
 
     </button>
 
+    <!-- <script>
+        const sections = document.querySelectorAll('.section');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script> -->
 </body>
 
 </html>

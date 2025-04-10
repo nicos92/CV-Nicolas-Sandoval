@@ -30,7 +30,14 @@ body {
     display: flex;
     flex-flow: column;
     padding: 0rem 8rem 0rem 8rem;
+    margin-top: 64px;
 }
+
+section {
+    scroll-margin-top: 64px;
+}
+
+
 
 h3 {
     text-decoration: underline;
@@ -58,8 +65,12 @@ nav {
     border-radius: 0 0 1rem 1rem;
 
     width: 100%;
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -314,7 +325,7 @@ footer {
     flex-flow: column;
     border-top: 1px solid #181818;
     border-radius: 1rem;
-    padding: 1rem 0rem 0rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
     gap: 1rem;
 }
 
@@ -354,11 +365,8 @@ footer span {
     box-shadow: 0 0 8px #3337;
 }
 
-
-
 .youtube {
-        box-shadow: 0 0 8px #f007;
-
+    box-shadow: 0 0 8px #f007;
 }
 
 .youtube:hover {
@@ -370,8 +378,7 @@ footer span {
 }
 
 .whatsapp {
-        box-shadow: 0 0 8px #1fb15477;
-
+    box-shadow: 0 0 8px #1fb15477;
 }
 
 .whatsapp:hover {
@@ -384,7 +391,6 @@ footer span {
 
 .github {
     box-shadow: 0 0 8px #3337;
-
 }
 
 .github:hover {
@@ -397,7 +403,6 @@ footer span {
 
 .linkedin {
     box-shadow: 0 0 8px #0068c277;
-
 }
 
 .linkedin:hover {
@@ -452,7 +457,6 @@ footer span {
 }
 @media (max-width: 991.98px) {
     .lista-redes-sociales {
-
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
@@ -477,7 +481,12 @@ footer span {
     bottom: 1rem;
     right: 1rem;
     display: none;
-    box-shadow: 0 0 8px #1a237e ;
+    box-shadow: 0 0 8px #1a237e;
+}
+
+#BtnSubir{
+    transition: transform 5s ease-in;
+
 }
 
 .button:hover {
@@ -488,7 +497,7 @@ footer span {
     background-color: #eceff1;
 }
 
-.button svg{
+.button svg {
     fill: #303f9f;
 }
 
@@ -521,3 +530,13 @@ footer svg {
 
 // XX-Large devices (larger desktops)
 // No media query since the xxl breakpoint has no upper bound on its width */
+.section {
+    opacity: 0 ;
+    transform: translateY(50px) ;
+    transition: opacity .4s ease-out, transform .4s ease-out;
+}
+
+.section.visible {
+    opacity: 1 ;
+    transform: translateY(0);
+}
