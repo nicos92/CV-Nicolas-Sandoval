@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/cv.css">
     <link rel="stylesheet" href="css/material_design_colors_full.css">
     <link rel="shortcut icon" href="svg/letter-n-svgrepo-com (1).svg" type="image/svg">
+    <script defer src="js/nav.js"></script>
     <script defer src="js/buttonfloattop.js"></script>
 </head>
 
@@ -18,7 +19,7 @@
 
         <nav id="logo" class="card__box-shadow">
             <h2 class="logo">NicoS92</h2>
-            <div class="nav__burger">
+            <div class="nav__burger" id="navBurger">
 
                 <svg width="48px" height="48px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12H20" stroke="#000000" stroke-width="2" stroke-linecap="round" />
@@ -26,7 +27,7 @@
                     <path d="M5 7H20" stroke="#000000" stroke-width="2" stroke-linecap="round" />
                 </svg>
             </div>
-            <ul class="nav__items">
+            <ul class="nav__items" id="navItems">
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#perfil-profesional">Perfil</a></li>
                 <li><a href="#experiencia-profesional">Experiencia</a></li>
@@ -288,23 +289,6 @@
 
     </button>
 
-    <!-- <script>
-        const sections = document.querySelectorAll('.section');
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-        
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script> -->
 </body>
 
 </html>
