@@ -1,5 +1,13 @@
 :root {
     font-size: 100%;
+
+    --fs-sm: clamp(0.89rem, 0.16vi + 0.86rem, 0.99rem);
+    --fs-base: clamp(1rem, 0.31vi + 0.94rem, 1.19rem);
+    --fs-md: clamp(1.13rem, 0.49vi + 1.03rem, 1.43rem);
+    --fs-lg: clamp(1.27rem, 0.73vi + 1.13rem, 1.71rem);
+    --fs-xl: clamp(1.42rem, 1.03vi + 1.23rem, 2.05rem);
+    --fs-xxl: clamp(1.6rem, 1.41vi + 1.34rem, 2.46rem);
+    --fs-xxxl: clamp(1.8rem, 1.88vi + 1.45rem, 2.95rem);
 }
 html {
     scroll-behavior: smooth;
@@ -22,7 +30,7 @@ html {
 body {
     background-color: #cfd8dc;
     font-family: BricolageGrotesque, Archivo, "Courier New", Courier, monospace;
-
+    font-size: var(--fs-base);
     line-height: 1.5em;
     min-height: 100vh;
 }
@@ -40,7 +48,8 @@ section {
 h3 {
     text-decoration: underline;
     color: #1a237e;
-    font-size: 1.5em;
+    font-size: var(--fs-lg);
+
     font-weight: bold;
     padding: 1rem 0.5rem;
     text-align: justify;
@@ -48,7 +57,7 @@ h3 {
 h4 {
     text-decoration: underline;
     color: #1a237e;
-    font-size: 1.2em;
+    font-size: var(--fs-md);
     font-weight: bold;
     padding: 1rem 0.5rem;
     text-align: justify;
@@ -57,10 +66,9 @@ h4 {
 nav {
     display: flex;
     background-color: #eceff1;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #181818;
-    border-radius: 0 0 1rem 1rem;
 
     width: 100%;
     padding: 0.5rem 1rem;
@@ -72,10 +80,11 @@ nav {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: var(--fs-xxl);
     color: #303f9f;
     font-weight: 900;
     padding: 1rem;
+    cursor: pointer;
 }
 
 .nav__burger > svg {
@@ -98,7 +107,7 @@ nav li > a {
     list-style: none;
 }
 nav li > a:hover {
-    font-size: 1.1rem;
+    font-size: var(--fs-base);
     font-weight: bold;
     color: #1a237e;
     background-color: #c5cae988;
@@ -124,15 +133,8 @@ header {
     border-radius: 1rem;
 }
 
-header .contenedor-titulo > h1 {
-    padding: 1rem;
-    font-size: 3em;
-    font-weight: 800;
-    letter-spacing: 0.1rem;
-}
-
 header .contenedor-titulo > h2 {
-    font-size: 1.8em;
+    font-size: var(--fs-xl);
     font-weight: bold;
     line-height: 2rem;
 }
@@ -159,25 +161,25 @@ header > .card {
 }
 .contenedor-img {
     flex-grow: 0;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: var(--fs-xxxl) * 1;
+    height: var(--fs-xxxl) * 1;
+    border-radius: var(--fs-base);
+    border: 1px solid  #1a237e;
+    box-shadow: 0 0 8px #1a237e, 0 0 16px #c5cae9;
 
     overflow: hidden;
 }
 .foto-perfil {
     width: 100%;
-    border-radius: 50%;
+    height: 100%;
+    border-radius: var(--fs-base);
+
     transform: scale(var(--escala, 1));
     transition: transform 0.25s 0.25s;
     cursor: pointer;
 
-    object-fit: scale-down;
+    object-fit: cover;
     object-position: center center;
-}
-
-.foto-perfil:hover {
-    --escala: 1.1;
 }
 
 .contenedor-titulo {
@@ -190,8 +192,11 @@ header > .card {
 .titulo {
     color: #1a237e;
     text-align: center;
-    line-height: 3rem;
-
+    line-height: 2rem;
+    font-size: var(--fs-xxxl);
+    padding: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
     text-shadow: 1px 0 1px #c5cae9, -1px 0 1px #c5cae9, 0 1px 1px #c5cae9,
         0 -1px 1px #c5cae9;
 }
@@ -204,7 +209,7 @@ header > .card {
         0 -1px 0 #c5cae9;
 }
 
-@media (width < 1340px) {
+@media (max-width: 1199.98px) {
     nav {
         justify-content: flex-start;
         align-items: center;
@@ -334,6 +339,7 @@ footer > a:visited {
 
 footer span {
     font-weight: bold;
+    font-size: var(--fs-sm);
 }
 
 .lista-redes-sociales {
@@ -355,7 +361,7 @@ footer span {
     align-items: center;
     gap: 0.3rem;
     border-radius: 1rem;
-    padding: 0.5rem 1rem;
+    padding: .5rem .5rem;
     box-shadow: 0 0 8px #3337;
 }
 
@@ -540,7 +546,7 @@ footer svg {
     cursor: pointer;
 }
 
-@media (width < 1340px) {
+@media (max-width: 1199.98px) {
     .nav__burger {
         display: block;
     }

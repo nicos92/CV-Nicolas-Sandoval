@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
         navItems.classList.toggle("active");
 
         // Opcional: cambiar el icono de hamburguesa a una X cuando el menú está abierto
-        this.classList.toggle("open");
+        navBurger.classList.toggle("open");
+    });
+
+    const navItemsItem = document.querySelectorAll(".nav__items_item");
+
+    navItemsItem.forEach(function (item) {
+        item.addEventListener("click", function () {
+            navItems.classList.toggle("active");
+            navBurger.classList.toggle("open");
+        });
     });
 });

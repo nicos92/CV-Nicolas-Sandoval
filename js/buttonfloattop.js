@@ -1,5 +1,6 @@
 // Seleccionamos el botón
 const botonSubir = document.getElementById("btnSubir");
+const logoSubir = document.getElementById("nombre_logo");
 
 // Función flecha para subir al top de la página
 const subirAlTop = () => {
@@ -11,6 +12,7 @@ const subirAlTop = () => {
 
 // Asignamos la función al evento click del botón
 botonSubir.addEventListener("click", subirAlTop);
+logoSubir.addEventListener("click", subirAlTop);
 
 // Mostrar u ocultar el botón según la posición del scroll
 window.addEventListener("scroll", () => {
@@ -29,10 +31,7 @@ const observer = new IntersectionObserver(
             if (entry.isIntersecting) {
                 entry.target.classList.add("visible");
             }
-            else {
-                entry.target.classList.remove("visible");
-                
-            }
+            
         });
     },
     {
