@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Nicolas Sandoval</title>
+    <meta name="description"
+        content="CV de Nicolás Salomón Sandoval, Analista, Desarrollador y Programador de Aplicaciones con experiencia en C#, JAVA, PYTHON, .NET, SPRING, ANGULARJS y más.">
+    <meta name="keywords"
+        content="CV, curriculum vitae, Nicolás Sandoval, desarrollador, programador, analista, C#, JAVA, PYTHON, .NET, SPRING, ANGULARJS, SQL, HTML, CSS">
+    <title>CV de Nicolás Sandoval - Analista, Desarrollador y Programador de Aplicaciones</title>
     <link rel="stylesheet" href="fonts/archivo.css">
     <link rel="stylesheet" href="fonts/bricolagegrotesque.css">
     <link rel="stylesheet" href="css/cv.css">
@@ -17,7 +21,7 @@
 <body id="body">
     <div class="contenedor-general">
 
-        <nav id="logo" class="card__box-shadow">
+        <nav id="logo" class="card__box-shadow" role="navigation">
             <h2 id="nombre_logo" class="logo">NicoS92</h2>
             <div class="nav__burger" id="navBurger">
 
@@ -29,7 +33,7 @@
             </div>
             <ul class="nav__items" id="navItems">
                 <li><a class="nav__items_item" href="#habilidades">Habilidades</a></li>
-                <li><a class="nav__items_item" " href=" #perfil-profesional">Perfil</a></li>
+                <li><a class="nav__items_item" href="#perfil-profesional">Perfil</a></li>
                 <li><a class="nav__items_item" href="#experiencia-profesional">Experiencia</a></li>
                 <li><a class="nav__items_item" href="#formacion">Formación</a></li>
                 <li><a class="nav__items_item" href="#proyectos">Proyectos</a></li>
@@ -56,106 +60,200 @@
         </header>
         <div class="contenedor-medio">
             <aside>
-
-                <section id="habilidades" class="habilidades section ">
+                <section id="habilidades" class="habilidades section">
                     <div class="card card__box-shadow">
                         <h3>Habilidades</h3>
-                        <ul>
-                            <li><span>Lenguajes de Desarrollo:</span><br /> C#, JAVA, PYTHON, PHP, KOTLIN, SQL, JAVA
-                                SCRIPT,
-                                CSS,
-                                HTML.
-                            </li>
-                            <li><span>Librerias y Frameworks:</span><br /> .NET, SPRING, ANGULARJS, NODE JS,BOOTSTRAP
-                            </li>
-                            <li><span>Plataformas:</span><br />VISUAL STUDIO CODE, VISUAL STUDIO, GIT, GITHUB, JIRA,
-                                TRELLO, FIGMA, MIRO, LINUX, MS OFFICE.</li>
-
-                            <li><span>Aptitudes:</span><br />
-                                Trabajo en equipo, UX experiencia de usuario, Planificación de trabajo, Buenas
-                                relaciones personales, Comunicación efectiva, Gestión de proyectos, Resolución efectiva
-                                de problemas, Mentalidad analítica.
-                            </li>
-                            <li><span>SGBD:</span><br />
-                                Microsoft SQLServer, PostgreSQL, MySQL, SQLite.
-                            </li>
-                        </ul>
+                        <div class="habilidades-container">
+                            <div class="skill-category">
+                                <h4>Lenguajes de Desarrollo</h4>
+                                <div class="skills-list">
+                                    <span class="skill-item">C#</span>
+                                    <span class="skill-item">JAVA</span>
+                                    <span class="skill-item">PYTHON</span>
+                                    <span class="skill-item">PHP</span>
+                                    <span class="skill-item">KOTLIN</span>
+                                    <span class="skill-item">SQL</span>
+                                    <span class="skill-item">JAVASCRIPT</span>
+                                    <span class="skill-item">CSS</span>
+                                    <span class="skill-item">HTML</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Librerias y Frameworks</h4>
+                                <div class="skills-list">
+                                    <span class="skill-item">.NET</span>
+                                    <span class="skill-item">SPRING</span>
+                                    <span class="skill-item">ANGULARJS</span>
+                                    <span class="skill-item">NODE JS</span>
+                                    <span class="skill-item">BOOTSTRAP</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Plataformas</h4>
+                                <div class="skills-list">
+                                    <span class="skill-item">VISUAL STUDIO CODE</span>
+                                    <span class="skill-item">VISUAL STUDIO</span>
+                                    <span class="skill-item">GIT</span>
+                                    <span class="skill-item">GITHUB</span>
+                                    <span class="skill-item">JIRA</span>
+                                    <span class="skill-item">TRELLO</span>
+                                    <span class="skill-item">FIGMA</span>
+                                    <span class="skill-item">MIRO</span>
+                                    <span class="skill-item">LINUX</span>
+                                    <span class="skill-item">MS OFFICE</span>
+                                    <span class="skill-item">DOCKER</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Aptitudes</h4>
+                                <div class="skills-list">
+                                    <span class="skill-item">Trabajo en equipo</span>
+                                    <span class="skill-item">UX</span>
+                                    <span class="skill-item">Planificación</span>
+                                    <span class="skill-item">Comunicación efectiva</span>
+                                    <span class="skill-item">Gestión de proyectos</span>
+                                    <span class="skill-item">Resolución de problemas</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>SGBD</h4>
+                                <div class="skills-list">
+                                    <span class="skill-item">Microsoft SQLServer</span>
+                                    <span class="skill-item">PostgreSQL</span>
+                                    <span class="skill-item">MySQL</span>
+                                    <span class="skill-item">SQLite</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </aside>
-            <main>
+            <main role="main">
 
-                <section id="perfil-profesional" class="main__card section ">
+                <section id="perfil-profesional" class="main__card section">
                     <div class="card card__box-shadow">
                         <h3>Perfil Profesional</h3>
-                        <p>Analista de tecnologías de la información con amplios conocimientos técnicos. Participé en
-                            diversos
-                            proyectos y
-                            brindando soluciones creativas a problemas complejos con un incremento en la optimización y
-                            automatización de Software
-                            con más de 3 años de experiencia en el rubro.</p>
+                        <div class="perfil-content">
+                            <p class="perfil-intro">
+                                Analista de Tecnologías de la Información con <strong>más de 3 años de
+                                    experiencia</strong> en el desarrollo y optimización de soluciones de software. Mi
+                                enfoque se centra en la <strong>automatización de procesos</strong> y la
+                                <strong>resolución creativa de desafíos complejos</strong>, impulsando la eficiencia y
+                                la innovación.
+                            </p>
+                            <ul class="perfil-puntos-clave">
+                                <li><span class="punto-clave-icono">&#10004;</span> Aporto soluciones creativas a
+                                    problemas complejos.</li>
+                                <li><span class="punto-clave-icono">&#10004;</span> Sólidos conocimientos técnicos en un
+                                    amplio stack de desarrollo.</li>
+                                <li><span class="punto-clave-icono">&#10004;</span> Experiencia demostrable en la mejora
+                                    de procesos y sistemas.</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
-                <section id="experiencia-profesional" class="main__card section ">
+                <section id="experiencia-profesional" class="main__card section">
                     <div class="card card__box-shadow">
                         <h3>Experiencia Profesional</h3>
-                        <ul>
-                            <li>Analista de sistemas en SANTA GIULIA S.A. JULIO 2019-ACTUAL</li>
-
-                            <h4>Tareas que realizo</h4>
-                            <ul>
-                                <li>Refactorización de código antiguo. Asegurar la compatibilidad de cada dependencia en
-                                    cada
-                                    actualización.</li>
-                                <li>Programación de aplicaciones para la mejora laboral del día a día optimizando y
-                                    automatizando cada tarea.</li>
-                                <li>Tareas de soporte y atención y resolución de aquellas incidencias y casos reportados
-                                    por
-                                    los
-                                    usuarios.</li>
-                                <li>Elaboración de informes y documentación técnica sobre el estado y evolución de los
-                                    sistemas.
+                        <div class="experiencia-item">
+                            <div class="experiencia-header">
+                                <h4 class="experiencia-titulo">Analista de Sistemas</h4>
+                                <p class="experiencia-info">SANTA GIULIA S.A. | JULIO 2019 - ACTUAL</p>
+                            </div>
+                            <ul class="experiencia-tareas">
+                                <li>Refactorización de código antiguo y aseguramiento de compatibilidad de dependencias.
+                                </li>
+                                <li>Programación de aplicaciones para la optimización y automatización de tareas
+                                    diarias.</li>
+                                <li>Soporte, atención y resolución de incidencias y casos reportados por los usuarios.
                                 </li>
                                 <li>Elaboración de informes y documentación técnica sobre el estado y evolución de los
-                                    sistemas.
-                                </li>
+                                    sistemas.</li>
                             </ul>
-                        </ul>
+                        </div>
+
                     </div>
                 </section>
-                <section id="formacion" class="main__card section ">
+                <section id="formacion" class="main__card section">
                     <div class="card card__box-shadow">
-
-                        <h3>
-
-                            Formación Academica</h3>
-                        <ul>
-                            <li>Carrera Terciaria en Análisis, Desarrollo y Programación de Aplicaciones I.S.F.T. N° 93
-                                Presidente Arturo
-                                Umberto
-                                Illia. Marzo 2024 - Actualmente cursando el segundo año. </li>
-                            <li>Curso Online Desarrollador JAVA intermedio U.T.N. Universidad Tecnológica Nacional.
-                                Marzo 2023 -
-                                Diciembre 2023</li>
-                            <li>Curso Online Desarrollador JAVA inicial U.T.N. Universidad Tecnológica Nacional. Marzo
-                                2022 -
-                                Diciembre 2022</li>
-                            <li>Curso Presencial de Programación WEB U.T.N. Universidad Tecnológica Nacional. Marzo 2022
-                                - Diciembre 2022.
-                            </li>
-                        </ul>
+                        <h3>Formación Académica</h3>
+                        <div class="formacion-container">
+                            <div class="formacion-item">
+                                <div class="formacion-icono">
+                                    <img src="svg/student-cap-svgrepo-com.svg" alt="Icono de birrete">
+                                </div>
+                                <div class="formacion-detalle">
+                                    <h4 class="formacion-titulo">Carrera Terciaria en Análisis, Desarrollo y
+                                        Programación de Aplicaciones</h4>
+                                    <p class="formacion-institucion">I.S.F.T. N° 93 Presidente Arturo Umberto Illia</p>
+                                    <p class="formacion-fecha">Marzo 2024 - Actualmente cursando el segundo año</p>
+                                    <p class="formacion-descripcion">Actualmente profundizando en paradigmas de
+                                        programación, diseño de bases de datos, y metodologías de desarrollo de software
+                                        para construir aplicaciones robustas y escalables.</p>
+                                </div>
+                            </div>
+                            <div class="formacion-item">
+                                <div class="formacion-icono">
+                                    <img src="svg/student-cap-svgrepo-com.svg" alt="Icono de birrete">
+                                </div>
+                                <div class="formacion-detalle">
+                                    <h4 class="formacion-titulo">Curso Online Desarrollador JAVA intermedio</h4>
+                                    <p class="formacion-institucion">U.T.N. Universidad Tecnológica Nacional</p>
+                                    <p class="formacion-fecha">Marzo 2023 - Diciembre 2023</p>
+                                    <p class="formacion-descripcion">Curso centrado en el desarrollo de aplicaciones
+                                        backend con Spring Framework, manejo de concurrencia, y patrones de diseño
+                                        avanzados para la creación de servicios web eficientes.</p>
+                                </div>
+                            </div>
+                            <div class="formacion-item">
+                                <div class="formacion-icono">
+                                    <img src="svg/student-cap-svgrepo-com.svg" alt="Icono de birrete">
+                                </div>
+                                <div class="formacion-detalle">
+                                    <h4 class="formacion-titulo">Curso Online Desarrollador JAVA inicial</h4>
+                                    <p class="formacion-institucion">U.T.N. Universidad Tecnológica Nacional</p>
+                                    <p class="formacion-fecha">Marzo 2022 - Diciembre 2022</p>
+                                    <p class="formacion-descripcion">Formación inicial en el lenguaje JAVA, cubriendo
+                                        fundamentos de la programación orientada a objetos, estructuras de datos, y
+                                        desarrollo de algoritmos.</p>
+                                </div>
+                            </div>
+                            <div class="formacion-item">
+                                <div class="formacion-icono">
+                                    <img src="svg/student-cap-svgrepo-com.svg" alt="Icono de birrete">
+                                </div>
+                                <div class="formacion-detalle">
+                                    <h4 class="formacion-titulo">Curso Presencial de Programación WEB</h4>
+                                    <p class="formacion-institucion">U.T.N. Universidad Tecnológica Nacional</p>
+                                    <p class="formacion-fecha">Marzo 2022 - Diciembre 2022</p>
+                                    <p class="formacion-descripcion">Introducción al desarrollo web full-stack,
+                                        abarcando desde la maquetación con HTML y CSS hasta la programación del lado del
+                                        cliente con JavaScript y del servidor.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section id="proyectos" class="main__card section ">
+                <section id="proyectos" class="main__card section">
                     <div class="card card__box-shadow">
                         <h3>Proyectos</h3>
-                        <ul>
-                            <li>Testeador de conexion de indigo por CMD a traves de ping desarrollado en JAVA.</li>
-                            <li>Limpiador de comentarios para archivos de texto plano desarrollado en C# con Windows
-                                Form.</li>
-                            <li>Envio de configuración para impresoras termicas Zebra desarrollado en C# con Windows
-                                Form</li>
-                        </ul>
+                        <div class="proyectos-container">
+                            <div class="proyecto-card">
+                                <h4>Testeador de Conexión de Red</h4>
+                                <p>Herramienta desarrollada en JAVA que utiliza pings de CMD para verificar la
+                                    conectividad de la red.</p>
+                            </div>
+                            <div class="proyecto-card">
+                                <h4>Limpiador de Comentarios</h4>
+                                <p>Aplicación de escritorio en C# con Windows Forms para eliminar comentarios de
+                                    archivos de texto plano.</p>
+                            </div>
+                            <div class="proyecto-card">
+                                <h4>Configurador de Impresoras Zebra</h4>
+                                <p>Software en C# y Windows Forms para enviar configuraciones a impresoras térmicas
+                                    Zebra.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
@@ -166,23 +264,19 @@
                     <h3>Redes Sociales</h3>
                     <div class="lista-redes-sociales">
                         <a href="https://www.youtube.com/@Nicolas.Salomon.Sandoval" target="_blank"
-                            rel="nofollow noreferrer noopener" class="youtube flex-row-center">
-                            <svg width="48px" height="48px" viewBox="0 -3 20 20" version="1.1"
+                            rel="nofollow noreferrer noopener" class="youtube flex-row-center" aria-label="YouTube"
+                            style="color: var(--youtube-color);">
+                            <svg width="24" height="24" viewBox="0 -3 20 20" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
                                 <title>youtube [#168]</title>
                                 <desc>Created with Sketch.</desc>
-                                <defs>
-
-                                </defs>
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)"
-                                        fill="#ff0000">
+                                        fill="currentColor">
                                         <g id="icons" transform="translate(56.000000, 160.000000)">
                                             <path
                                                 d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
                                                 id="youtube-[#168]">
-
                                             </path>
                                         </g>
                                     </g>
@@ -191,25 +285,15 @@
                             <span>YouTube</span>
                         </a>
 
-                        <a href="tel:+541164890885" class="whatsapp flex-row-center">
-                            <svg width="48px" height="48px" viewBox="0 0 20 20" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
+                        <a href="tel:+541164890885" class="whatsapp flex-row-center" aria-label="WhatsApp" style="color: var(--whatsapp-color);">
+                            <svg width="24" height="24" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>whatsapp [#128]</title>
                                 <desc>Created with Sketch.</desc>
-                                <defs>
-
-                                </defs>
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7599.000000)"
-                                        fill="#1fb154">
+                                    <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7599.000000)" fill="currentColor">
                                         <g id="icons" transform="translate(56.000000, 160.000000)">
-                                            <path
-                                                d="M259.821,7453.12124 C259.58,7453.80344 258.622,7454.36761 257.858,7454.53266 C257.335,7454.64369 256.653,7454.73172 254.355,7453.77943 C251.774,7452.71011 248.19,7448.90097 248.19,7446.36621 C248.19,7445.07582 248.934,7443.57337 250.235,7443.57337 C250.861,7443.57337 250.999,7443.58538 251.205,7444.07952 C251.446,7444.6617 252.034,7446.09613 252.104,7446.24317 C252.393,7446.84635 251.81,7447.19946 251.387,7447.72462 C251.252,7447.88266 251.099,7448.05372 251.27,7448.3478 C251.44,7448.63589 252.028,7449.59418 252.892,7450.36341 C254.008,7451.35771 254.913,7451.6748 255.237,7451.80984 C255.478,7451.90987 255.766,7451.88687 255.942,7451.69881 C256.165,7451.45774 256.442,7451.05762 256.724,7450.6635 C256.923,7450.38141 257.176,7450.3464 257.441,7450.44643 C257.62,7450.50845 259.895,7451.56477 259.991,7451.73382 C260.062,7451.85686 260.062,7452.43903 259.821,7453.12124 M254.002,7439 L253.997,7439 L253.997,7439 C248.484,7439 244,7443.48535 244,7449 C244,7451.18666 244.705,7453.21526 245.904,7454.86076 L244.658,7458.57687 L248.501,7457.3485 C250.082,7458.39482 251.969,7459 254.002,7459 C259.515,7459 264,7454.51465 264,7449 C264,7443.48535 259.515,7439 254.002,7439"
-                                                id="whatsapp-[#128]">
-
-                                            </path>
-                                        </g>
+                                            <path d="M259.821,7453.12124 C259.58,7453.80344 258.622,7454.36761 257.858,7454.53266 C257.335,7454.64369 256.653,7454.73172 254.355,7453.77943 C251.774,7452.71011 248.19,7448.90097 248.19,7446.36621 C248.19,7445.07582 248.934,7443.57337 250.235,7443.57337 C250.861,7443.57337 250.999,7443.58538 251.205,7444.07952 C251.446,7444.6617 252.034,7446.09613 252.104,7446.24317 C252.393,7446.84635 251.81,7447.19946 251.387,7447.72462 C251.252,7447.88266 251.099,7448.05372 251.27,7448.3478 C251.44,7448.63589 252.028,7449.59418 252.892,7450.36341 C254.008,7451.35771 254.913,7451.6748 255.237,7451.80984 C255.478,7451.90987 255.766,7451.88687 255.942,7451.69881 C256.165,7451.45774 256.442,7451.05762 256.724,7450.6635 C256.923,7450.38141 257.176,7450.3464 257.441,7450.44643 C257.62,7450.50845 259.895,7451.56477 259.991,7451.73382 C260.062,7451.85686 260.062,7452.43903 259.821,7453.12124 M254.002,7439 L253.997,7439 L253.997,7439 C248.484,7439 244,7443.48535 244,7449 C244,7451.18666 244.705,7453.21526 245.904,7454.86076 L244.658,7458.57687 L248.501,7457.3485 C250.082,7458.39482 251.969,7459 254.002,7459 C259.515,7459 264,7454.51465 264,7449 C264,7443.48535 259.515,7439 254.002,7439" id="whatsapp-[#128]">
+                                        </path>
                                     </g>
                                 </g>
                             </svg>
@@ -217,44 +301,17 @@
                         </a>
 
                         <a href="https://www.github.com/nicos92" target="_blank" rel="nofollow noreferrer noopener"
-                            class="github flex-row-center">
-                            <svg width="48px" height="48px" viewBox="0 0 73 73" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                                <title>team-collaboration/version-control/github</title>
-                                <desc>Created with Sketch.</desc>
-                                <defs>
-
-                                </defs>
-                                <g id="team-collaboration/version-control/github" stroke="none" stroke-width="1"
-                                    fill="none" fill-rule="evenodd">
-                                    <g id="container" transform="translate(2.000000, 2.000000)" fill-rule="nonzero">
-                                        <rect id="mask" stroke="#000000" stroke-width="2" fill="#000000" x="-1" y="-1"
-                                            width="71" height="71" rx="14">
-
-                                        </rect>
-                                        <path
-                                            d="M58.3067362,21.4281798 C55.895743,17.2972267 52.6253846,14.0267453 48.4948004,11.615998 C44.3636013,9.20512774 39.8535636,8 34.9614901,8 C30.0700314,8 25.5585181,9.20549662 21.4281798,11.615998 C17.2972267,14.0266224 14.0269912,17.2972267 11.615998,21.4281798 C9.20537366,25.5590099 8,30.0699084 8,34.9607523 C8,40.8357654 9.71405782,46.1187277 13.1430342,50.8109917 C16.5716416,55.5036246 21.0008949,58.7507436 26.4304251,60.5527176 C27.0624378,60.6700211 27.5302994,60.5875152 27.8345016,60.3072901 C28.1388268,60.0266961 28.290805,59.6752774 28.290805,59.2545094 C28.290805,59.1842994 28.2847799,58.5526556 28.2730988,57.3588401 C28.2610487,56.1650247 28.2553926,55.1235563 28.2553926,54.2349267 L27.4479164,54.3746089 C26.9330843,54.468919 26.2836113,54.5088809 25.4994975,54.4975686 C24.7157525,54.4866252 23.9021284,54.4044881 23.0597317,54.2517722 C22.2169661,54.1004088 21.4330982,53.749359 20.7075131,53.1993604 C19.982297,52.6493618 19.4674649,51.9294329 19.1631397,51.0406804 L18.8120898,50.2328353 C18.5780976,49.6950097 18.2097104,49.0975487 17.7064365,48.4426655 C17.2031625,47.7871675 16.6942324,47.3427912 16.1794003,47.108799 L15.9336039,46.9328437 C15.7698216,46.815909 15.6178435,46.6748743 15.4773006,46.511215 C15.3368806,46.3475556 15.2317501,46.1837734 15.1615401,46.0197452 C15.0912072,45.855594 15.1494901,45.7209532 15.3370036,45.6153308 C15.5245171,45.5097084 15.8633939,45.4584343 16.3551097,45.4584343 L17.0569635,45.5633189 C17.5250709,45.6571371 18.104088,45.9373622 18.7947525,46.4057156 C19.4850481,46.8737001 20.052507,47.4821045 20.4972521,48.230683 C21.0358155,49.1905062 21.6846737,49.9218703 22.4456711,50.4251443 C23.2060537,50.9284182 23.9727072,51.1796248 24.744894,51.1796248 C25.5170807,51.1796248 26.1840139,51.121096 26.7459396,51.0046532 C27.3072505,50.8875956 27.8338868,50.7116403 28.3256025,50.477771 C28.5362325,48.9090515 29.1097164,47.7039238 30.0455624,46.8615271 C28.7116959,46.721353 27.5124702,46.5102313 26.4472706,46.2295144 C25.3826858,45.9484285 24.2825656,45.4922482 23.1476478,44.8597436 C22.0121153,44.2280998 21.0701212,43.44374 20.3214198,42.5080169 C19.5725954,41.571802 18.9580429,40.3426971 18.4786232,38.821809 C17.9989575,37.300306 17.7590632,35.5451796 17.7590632,33.5559381 C17.7590632,30.7235621 18.6837199,28.3133066 20.5326645,26.3238191 C19.6665366,24.1944035 19.7483048,21.8072644 20.778215,19.1626478 C21.4569523,18.951772 22.4635002,19.1100211 23.7973667,19.6364115 C25.1314792,20.1630477 26.1082708,20.6141868 26.7287253,20.9882301 C27.3491798,21.3621504 27.8463057,21.6790175 28.2208409,21.9360032 C30.3978419,21.3277217 32.644438,21.0235195 34.9612442,21.0235195 C37.2780503,21.0235195 39.5251383,21.3277217 41.7022622,21.9360032 L43.0362517,21.0938524 C43.9484895,20.5319267 45.0257392,20.0169716 46.2654186,19.5488642 C47.5058357,19.0810026 48.4543466,18.9521409 49.1099676,19.1630167 C50.1627483,21.8077563 50.2565666,24.1947724 49.3901927,26.324188 C51.2390143,28.3136755 52.1640399,30.7245457 52.1640399,33.556307 C52.1640399,35.5455485 51.9232849,37.3062081 51.444357,38.8393922 C50.9648143,40.3728223 50.3449746,41.6006975 49.5845919,42.5256002 C48.8233486,43.4503799 47.8753296,44.2285916 46.7404118,44.8601125 C45.6052481,45.4921252 44.504759,45.9483056 43.4401742,46.2293914 C42.3750975,46.5104772 41.1758719,46.7217219 39.8420054,46.8621419 C41.0585683,47.9149226 41.6669728,49.5767225 41.6669728,51.846804 L41.6669728,59.2535257 C41.6669728,59.6742937 41.8132948,60.0255895 42.1061847,60.3063064 C42.3987058,60.5865315 42.8606653,60.6690374 43.492678,60.5516109 C48.922946,58.7498829 53.3521992,55.5026409 56.7806837,50.810008 C60.2087994,46.117744 61.923472,40.8347817 61.923472,34.9597686 C61.9222424,30.0695396 60.7162539,25.5590099 58.3067362,21.4281798 Z"
-                                            id="Shape" fill="#FFFFFF">
-
-                                        </path>
-                                    </g>
-                                </g>
+                            class="github flex-row-center" aria-label="GitHub" style="color: var(--github-color);">
+                            <svg width="32" height="32" viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M58.3067362,21.4281798 C55.895743,17.2972267 52.6253846,14.0267453 48.4948004,11.615998 C44.3636013,9.20512774 39.8535636,8 34.9614901,8 C30.0700314,8 25.5585181,9.20549662 21.4281798,11.615998 C17.2972267,14.0266224 14.0269912,17.2972267 11.615998,21.4281798 C9.20537366,25.5590099 8,30.0699084 8,34.9607523 C8,40.8357654 9.71405782,46.1187277 13.1430342,50.8109917 C16.5716416,55.5036246 21.0008949,58.7507436 26.4304251,60.5527176 C27.0624378,60.6700211 27.5302994,60.5875152 27.8345016,60.3072901 C28.1388268,60.0266961 28.290805,59.6752774 28.290805,59.2545094 C28.290805,59.1842994 28.2847799,58.5526556 28.2730988,57.3588401 C28.2610487,56.1650247 28.2553926,55.1235563 28.2553926,54.2349267 L27.4479164,54.3746089 C26.9330843,54.468919 26.2836113,54.5088809 25.4994975,54.4975686 C24.7157525,54.4866252 23.9021284,54.4044881 23.0597317,54.2517722 C22.2169661,54.1004088 21.4330982,53.749359 20.7075131,53.1993604 C19.982297,52.6493618 19.4674649,51.9294329 19.1631397,51.0406804 L18.8120898,50.2328353 C18.5780976,49.6950097 18.2097104,49.0975487 17.7064365,48.4426655 C17.2031625,47.7871675 16.6942324,47.3427912 16.1794003,47.108799 L15.9336039,46.9328437 C15.7698216,46.815909 15.6178435,46.6748743 15.4773006,46.511215 C15.3368806,46.3475556 15.2317501,46.1837734 15.1615401,46.0197452 C15.0912072,45.855594 15.1494901,45.7209532 15.3370036,45.6153308 C15.5245171,45.5097084 15.8633939,45.4584343 16.3551097,45.4584343 L17.0569635,45.5633189 C17.5250709,45.6571371 18.104088,45.9373622 18.7947525,46.4057156 C19.4850481,46.8737001 20.052507,47.4821045 20.4972521,48.230683 C21.0358155,49.1905062 21.6846737,49.9218703 22.4456711,50.4251443 C23.2060537,50.9284182 23.9727072,51.1796248 24.744894,51.1796248 C25.5170807,51.1796248 26.1840139,51.121096 26.7459396,51.0046532 C27.3072505,50.8875956 27.8338868,50.7116403 28.3256025,50.477771 C28.5362325,48.9090515 29.1097164,47.7039238 30.0455624,46.8615271 C28.7116959,46.721353 27.5124702,46.5102313 26.4472706,46.2295144 C25.3826858,45.9484285 24.2825656,45.4922482 23.1476478,44.8597436 C22.0121153,44.2280998 21.0701212,43.44374 20.3214198,42.5080169 C19.5725954,41.571802 18.9580429,40.3426971 18.4786232,38.821809 C17.9989575,37.300306 17.7590632,35.5451796 17.7590632,33.5559381 C17.7590632,30.7235621 18.6837199,28.3133066 20.5326645,26.3238191 C19.6665366,24.1944035 19.7483048,21.8072644 20.778215,19.1626478 C21.4569523,18.951772 22.4635002,19.1100211 23.7973667,19.6364115 C25.1314792,20.1630477 26.1082708,20.6141868 26.7287253,20.9882301 C27.3491798,21.3621504 27.8463057,21.6790175 28.2208409,21.9360032 C30.3978419,21.3277217 32.644438,21.0235195 34.9612442,21.0235195 C37.2780503,21.0235195 39.5251383,21.3277217 41.7022622,21.9360032 L43.0362517,21.0938524 C43.9484895,20.5319267 45.0257392,20.0169716 46.2654186,19.5488642 C47.5058357,19.0810026 48.4543466,18.9521409 49.1099676,19.1630167 C50.1627483,21.8077563 50.2565666,24.1947724 49.3901927,26.324188 C51.2390143,28.3136755 52.1640399,30.7245457 52.1640399,33.556307 C52.1640399,35.5455485 51.9232849,37.3062081 51.444357,38.8393922 C50.9648143,40.3728223 50.3449746,41.6006975 49.5845919,42.5256002 C48.8233486,43.4503799 47.8753296,44.2285916 46.7404118,44.8601125 C45.6052481,45.4921252 44.504759,45.9483056 43.4401742,46.2293914 C42.3750975,46.5104772 41.1758719,46.7217219 39.8420054,46.8621419 C41.0585683,47.9149226 41.6669728,49.5767225 41.6669728,51.846804 L41.6669728,59.2535257 C41.6669728,59.6742937 41.8132948,60.0255895 42.1061847,60.3063064 C42.3987058,60.5865315 42.8606653,60.6690374 43.492678,60.5516109 C48.922946,58.7498829 53.3521992,55.5026409 56.7806837,50.810008 C60.2087994,46.117744 61.923472,40.8347817 61.923472,34.9597686 C61.9222424,30.0695396 60.7162539,25.5590099 58.3067362,21.4281798 Z" fill="currentColor"></path>
                             </svg>
                             <span>GitHub</span>
-
                         </a>
 
                         <a href="https://www.linkedin.com/in/nicolas-sandoval-4398b3259/" target="_blank"
-                            rel="nofollow noreferrer noopener" class="linkedin flex-row-center">
-                            <svg fill="#000000" height="48px" width="48px" version="1.1" id="Layer_1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="-143 145 512 512" xml:space="preserve">
-                                <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z
-                                	 M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7
-                                	c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4
-                                	c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6
-                                	c35.5,0,63.3,23,63.3,72.4V508.1z" />
+                            rel="nofollow noreferrer noopener" class="linkedin flex-row-center" aria-label="LinkedIn" style="color: var(--linkedin-color);">
+                            <svg width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                <path fill="currentColor" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/>
                             </svg>
                             <span>LinkedIn</span>
                         </a>
@@ -266,27 +323,15 @@
             </section>
 
 
+            <section class="copyright">
+                <p class="copyright__content">&copy; 2025 NicoS92, Inc.</p>
+            </section>
         </footer>
-    </div>
-    <section class="copyright">
-        <p class="copyright__content">&copy; 2025 NicoS92, Inc.</p>
-    </section>
-    <button id="btnSubir" class="button">
-        <svg width="32px" viewBox="-1.6 -1.6 19.20 19.20" xmlns="http://www.w3.org/2000/svg">
-
-            <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-
-            <g id="SVGRepo_iconCarrier">
-                <path d="M13 9H10V16H6V9L3 9V8L8 3L13 8V9Z" />
-                <path d="M14 2H2V0H14V2Z" />
-            </g>
-
-        </svg>
+        <button id="btnSubir" class="button">
 
 
-    </button>
+
+        </button>
 
 </body>
 
