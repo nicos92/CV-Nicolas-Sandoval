@@ -816,4 +816,9 @@ footer svg {
         flex-direction: column;
         gap: 0.5rem;
     }
+    
+    .formacion-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
