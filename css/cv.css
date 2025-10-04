@@ -590,6 +590,7 @@ aside ul {
 .proyectos-container {
     display: grid;
     grid-template-columns: 1fr;
+    /* Default to 1 column */
     gap: 1.5rem;
     padding: 1rem 0;
 }
@@ -597,7 +598,7 @@ aside ul {
 .proyecto-card {
     background-color: transparent;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 5px solid var(--primary-color);
@@ -620,9 +621,26 @@ aside ul {
     line-height: 1.6;
 }
 
+.proyecto-links {
+    margin-top: 1rem;
+}
+
+.proyecto-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--card-background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.proyecto-link:hover {
+    background-color: var(--secondary-color);
+}
+
 /* Footer Content */
-
-
 footer>section {
     display: flex;
     flex-direction: column;
@@ -678,7 +696,7 @@ footer svg {
     text-align: center;
 }
 
-.copyright__content{
+.copyright__content {
     font-size: var(--fs-sm);
 }
 
@@ -793,19 +811,16 @@ footer svg {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
+
 }
 
-@media (min-width: 768px) {
+/* For large screens and up, use 3 columns */
+@media (min-width: 1366px) {
     .proyectos-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (min-width: 1600px) {
-    .proyectos-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
 
 @media (max-width: 575.98px) {
     .contenedor-general {
@@ -816,7 +831,7 @@ footer svg {
         flex-direction: column;
         gap: 0.5rem;
     }
-    
+
     .formacion-item {
         flex-direction: column;
         align-items: flex-start;
