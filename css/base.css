@@ -1,0 +1,69 @@
+/* ==========================================================================
+   1. Global Styles & Variables
+   ========================================================================== */
+
+:root {
+    font-size: 100%;
+
+    /* Font Sizes */
+    --fs-sm: clamp(0.89rem, 0.16vi + 0.86rem, 0.99rem);
+    --fs-base: clamp(1rem, 0.31vi + 0.94rem, 1rem);
+    --fs-md: clamp(1.13rem, 0.49vi + 1.03rem, 1.43rem);
+    --fs-lg: clamp(1.27rem, 0.73vi + 1.13rem, 1.71rem);
+    --fs-xl: clamp(1.42rem, 1.03vi + 1.23rem, 2.05rem);
+    --fs-xxl: clamp(1.6rem, 1.41vi + 1.34rem, 2.46rem);
+    --fs-xxxl: clamp(1.8rem, 1.88vi + 1.45rem, 2.95rem);
+
+    /* Colors */
+    --primary-color: #1a237e;
+    --primary-color-light: #c5cae9;
+    --secondary-color: #303f9f;
+    --background-color: #cfd8dc;
+    --card-background-color: #eceff1;
+    --text-color: #181818;
+
+    /* Social Colors */
+    --youtube-color: #f00;
+    --whatsapp-color: #1fb154;
+    --github-color: #333;
+    --linkedin-color: #0068c2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: BricolageGrotesque, Archivo, "Courier New", Courier, monospace;
+    font-size: var(--fs-base);
+    line-height: 1.5em;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   2. Typography
+   ========================================================================== */
+
+h3,
+h4 {
+    text-decoration: underline;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    text-align: left;
+}
+
+h3 {
+    font-size: var(--fs-lg);
+}
+
+h4 {
+    font-size: var(--fs-md);
+}

@@ -1,0 +1,18 @@
+/* ==========================================================================
+   10. Animations & Transitions
+   ========================================================================== */
+
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#btnSubir {
+    transition: transform 5s ease-in;
+}

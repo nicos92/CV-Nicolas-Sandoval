@@ -1,0 +1,53 @@
+/* ==========================================================================
+   7. Main Content Sections
+   ========================================================================== */
+
+.main__card {
+    padding: 1rem 1rem;
+    flex: 1;
+}
+
+.main__card p {
+    padding: 0.5rem 0.1rem;
+}
+
+main li {
+    padding: 0.1rem 0.1rem;
+}
+
+main li>span {
+    font-weight: bold;
+}
+
+main .card li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main .card li a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+main .card li a>span {
+    font-weight: bold;
+    color: inherit;
+}
+
+/* Aside Content */
+aside .card li {
+    margin: 1rem 0.1rem;
+}
+
+aside li>span {
+    font-weight: bold;
+}
+
+aside .card li ul li {
+    margin: 0.5rem 0.1rem;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+}

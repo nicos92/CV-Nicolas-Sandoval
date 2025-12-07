@@ -1,0 +1,67 @@
+/* ==========================================================================
+   5. Header Section
+   ========================================================================== */
+
+header>.card {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: flex-start;
+    background-image: linear-gradient(90deg, #eceff1bb, #eceff199),
+        url("../img/17 1920.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.contenedor-img {
+    flex-grow: 0;
+    width: var(--fs-xxxl) * 1;
+    height: var(--fs-xxxl) * 1;
+    border-radius: var(--fs-base);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 8px var(--primary-color), 0 0 16px var(--primary-color-light);
+    overflow: hidden;
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--fs-base);
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s 0.25s;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.contenedor-titulo {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo {
+    color: var(--primary-color);
+    text-align: center;
+    line-height: 2rem;
+    font-size: var(--fs-xxxl);
+    padding: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 0 1px var(--primary-color-light), -1px 0 1px var(--primary-color-light), 0 1px 1px var(--primary-color-light),
+        0 -1px 1px var(--primary-color-light);
+}
+
+.subtitulo {
+    color: var(--secondary-color);
+    text-align: center;
+    line-height: 3rem;
+    text-shadow: 1px 0 0 var(--primary-color-light), -1px 0 0 var(--primary-color-light), 0 1px 0 var(--primary-color-light),
+        0 -1px 0 var(--primary-color-light);
+}

@@ -1,0 +1,62 @@
+/* ==========================================================================
+   9. Footer Section
+   ========================================================================== */
+
+footer>section {
+    display: flex;
+    flex-direction: column;
+}
+
+footer>section>div a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer>a:visited {
+    text-decoration: none;
+}
+
+footer span {
+    font-weight: bold;
+    font-size: var(--fs-sm);
+}
+
+footer svg {
+    fill: var(--linkedin-color);
+}
+
+.lista-redes-sociales {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.lista-redes-sociales>a {
+    flex-direction: row;
+}
+
+.whatsapp {
+    --social-color: var(--whatsapp-color);
+}
+
+.github {
+    --social-color: var(--github-color);
+}
+
+.linkedin {
+    --social-color: var(--linkedin-color);
+}
+
+.copyright {
+    background-color: var(--card-background-color);
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    padding: 0.5rem 0 0;
+    text-align: center;
+}
+
+.copyright__content {
+    font-size: var(--fs-sm);
+}
