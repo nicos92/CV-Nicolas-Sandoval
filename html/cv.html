@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/material_design_colors_full.css">
     <link rel="shortcut icon" href="../svg/letter-n-svgrepo-com (1).svg" type="image/svg">
     <script defer src="../js/buttonfloattop.js"></script>
+    <script defer src="../js/contacto.js"></script>
 </head>
 
 <body id="body">
@@ -32,6 +33,7 @@
                 <li><a href="#experiencia-profesional">Experiencia</a></li>
                 <li><a href="#formacion">Formación</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#redes-sociales">Redes Sociales</a></li>
             </ul>
 
@@ -193,6 +195,33 @@
                             <li>Envio de configuración para impresoras termicas Zebra desarrollado en C# con Windows
                                 Form</li>
                         </ul>
+                    </div>
+                </section>
+                <section id="contacto" class="main__card section">
+                    <div class="card card__box-shadow">
+                        <h3>Contacto</h3>
+                        <form id="formulario-contacto" class="contacto__formulario">
+                            <div class="contacto__grupo">
+                                <label for="nombre" class="contacto__label">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" class="contacto__input" required>
+                            </div>
+                            <div class="contacto__grupo">
+                                <label for="email" class="contacto__label">Email</label>
+                                <input type="email" id="email" name="email" class="contacto__input" required>
+                            </div>
+                            <div class="contacto__grupo">
+                                <label for="asunto" class="contacto__label">Asunto</label>
+                                <input type="text" id="asunto" name="asunto" class="contacto__input" required>
+                            </div>
+                            <div class="contacto__grupo">
+                                <label for="mensaje" class="contacto__label">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" class="contacto__textarea" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="contacto__boton">Enviar Mensaje</button>
+                        </form>
+                        <div id="mensaje-exito" class="contacto__mensaje-exito" style="display: none;">
+                            ¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.
+                        </div>
                     </div>
                 </section>
             </main>
