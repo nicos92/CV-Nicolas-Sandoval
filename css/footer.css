@@ -2,30 +2,30 @@
    9. Footer Section
    ========================================================================== */
 
-footer>section {
+.cv__footer>section {
     display: flex;
     flex-direction: column;
 }
 
-footer>section>div a {
+.cv__footer>section>div a {
     text-decoration: none;
     color: inherit;
 }
 
-footer>a:visited {
+.cv__footer>a:visited {
     text-decoration: none;
 }
 
-footer span {
+.cv__footer span {
     font-weight: bold;
     font-size: var(--fs-sm);
 }
 
-footer svg {
+.cv__footer svg {
     fill: var(--linkedin-color);
 }
 
-.lista-redes-sociales {
+.cv__social__list {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
@@ -33,30 +33,31 @@ footer svg {
     padding: 2rem 1rem;
 }
 
-.lista-redes-sociales>a {
+.cv__social__list>a {
     flex-direction: row;
 }
 
-.whatsapp {
+.cv__social__item--whatsapp {
     --social-color: var(--whatsapp-color);
 }
 
-.github {
+.cv__social__item--github {
     --social-color: var(--github-color);
 }
 
-.linkedin {
+.cv__social__item--linkedin {
     --social-color: var(--linkedin-color);
 }
 
-.copyright {
+.cv__footer__copyright {
     background-color: var(--card-background-color);
     border-radius: 1rem 1rem 0 0;
     width: 100%;
     padding: 0.5rem 0 0;
     text-align: center;
+    margin-top: 8px;
 }
 
-.copyright__content {
+.cv__footer__copyright-text {
     font-size: var(--fs-sm);
 }

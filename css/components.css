@@ -16,7 +16,7 @@
 }
 
 /* Button */
-.button {
+.cv__scroll-to-top {
     cursor: pointer;
     border: none;
     border-radius: 0.5rem;
@@ -28,20 +28,20 @@
     box-shadow: 0 0 8px var(--primary-color);
 }
 
-.button:hover {
+.cv__scroll-to-top:hover {
     background-color: #fff;
 }
 
-.button:active {
+.cv__scroll-to-top:active {
     background-color: var(--card-background-color);
 }
 
-.button svg {
+.cv__scroll-to-top svg {
     fill: var(--secondary-color);
 }
 
 /* Logo */
-.logo {
+.cv__logo {
     font-size: var(--fs-xl);
     color: var(--secondary-color);
     font-weight: 900;

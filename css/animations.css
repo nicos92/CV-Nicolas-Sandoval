@@ -2,17 +2,17 @@
    10. Animations & Transitions
    ========================================================================== */
 
-.section {
+.cv__section {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
 
-.section.visible {
+.cv__section.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-#btnSubir {
+.cv__scroll-to-top {
     transition: transform 5s ease-in;
 }

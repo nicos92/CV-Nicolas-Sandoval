@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         navBurger.classList.toggle("open");
     });
 
-    const navItemsItem = document.querySelectorAll(".nav__items_item");
+    const navItemsItem = document.querySelectorAll(".cv__nav__item");
 
     navItemsItem.forEach(function (item) {
         item.addEventListener("click", function () {

@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-const sections = document.querySelectorAll(".section");
+const sections = document.querySelectorAll(".cv__section");
 
 const observer = new IntersectionObserver(
     (entries) => {

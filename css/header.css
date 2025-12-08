@@ -2,7 +2,7 @@
    5. Header Section
    ========================================================================== */
 
-header>.card {
+.cv__header>.card {
     width: 100%;
     padding: 2rem;
     display: flex;
@@ -18,7 +18,7 @@ header>.card {
     background-attachment: fixed;
 }
 
-.contenedor-img {
+.cv__header__image-container {
     flex-grow: 0;
     width: var(--fs-xxxl) * 1;
     height: var(--fs-xxxl) * 1;
@@ -28,7 +28,7 @@ header>.card {
     overflow: hidden;
 }
 
-.foto-perfil {
+.cv__header__profile-image {
     width: 100%;
     height: 100%;
     border-radius: var(--fs-base);
@@ -39,14 +39,14 @@ header>.card {
     object-position: center center;
 }
 
-.contenedor-titulo {
+.cv__header__title-container {
     display: flex;
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.titulo {
+.cv__header__title {
     color: var(--primary-color);
     text-align: center;
     line-height: 2rem;
@@ -58,7 +58,7 @@ header>.card {
         0 -1px 1px var(--primary-color-light);
 }
 
-.subtitulo {
+.cv__header__subtitle {
     color: var(--secondary-color);
     text-align: center;
     line-height: 3rem;

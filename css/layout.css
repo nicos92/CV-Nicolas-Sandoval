@@ -2,7 +2,7 @@
    3. Layout
    ========================================================================== */
 
-.contenedor-general {
+.cv {
     display: flex;
     flex-flow: column;
     padding: 0rem 8rem 0rem 8rem;
@@ -10,13 +10,13 @@
     min-height: calc(100vh - 64px);
 }
 
-.contenedor-medio {
+.cv__main-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-header {
+.cv__header {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +27,7 @@ header {
     border-radius: 1rem;
 }
 
-nav {
+.cv__nav {
     display: flex;
     background-color: var(--card-background-color);
     justify-content: space-between;
@@ -62,7 +62,7 @@ aside {
     gap: 1rem;
 }
 
-footer {
+.cv__footer {
     display: flex;
     flex-flow: column;
     border-top: 1px solid var(--text-color);

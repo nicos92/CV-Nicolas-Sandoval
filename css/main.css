@@ -2,12 +2,12 @@
    7. Main Content Sections
    ========================================================================== */
 
-.main__card {
+.cv__section {
     padding: 1rem 1rem;
     flex: 1;
 }
 
-.main__card p {
+.cv__section p {
     padding: 0.5rem 0.1rem;
 }
 
