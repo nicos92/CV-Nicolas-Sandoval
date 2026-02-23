@@ -22,8 +22,8 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
 
 // Scroll animations with IntersectionObserver
 const observerOptions = {
-  threshold: 0.05,
-  rootMargin: "0px 0px 200px 0px",
+  threshold: 0.1,
+  rootMargin: "0px 0px 50px 0px",
 };
 
 // Observe sections
@@ -42,7 +42,7 @@ sections.forEach((section) => {
   sectionObserver.observe(section);
 });
 
-// Observe child cards - trigger when section is visible
+// Observe child cards within sections (excluding skill tags in sliders)
 const cardsObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -53,13 +53,10 @@ const cardsObserver = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-const skillCategories = document.querySelectorAll(".skill-category");
 const projectCards = document.querySelectorAll(".project-card");
 const educationCards = document.querySelectorAll(".education-card");
 const stats = document.querySelectorAll(".stat");
 
-[...skillCategories, ...projectCards, ...educationCards, ...stats].forEach(
-  (el) => {
-    cardsObserver.observe(el);
-  },
-);
+[...projectCards, ...educationCards, ...stats].forEach((el) => {
+  cardsObserver.observe(el);
+});
