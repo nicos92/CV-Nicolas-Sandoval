@@ -580,13 +580,12 @@ strong {
 
 .skills-slider__track {
     display: flex;
-    gap: var(--spacing-md);
-    animation: scroll-left 30s linear infinite;
+    animation: scroll-left 40s linear infinite;
 }
 
 .skills-slider--reverse .skills-slider__track {
     animation-direction: reverse;
-    animation-duration: 25s;
+    animation-duration: 35s;
 }
 
 .skills-slider__group {
