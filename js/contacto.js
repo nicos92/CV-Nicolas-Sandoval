@@ -14,14 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    const datos = {
-      nombre: nombre,
-      email: email,
-      asunto: asunto,
-      mensaje: mensaje,
-      time: Date.now(),
-    };
-
     enviarEmailConEmailJS();
   });
 
@@ -56,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function mostrarError(mensaje) {
     const errorDiv = document.createElement("div");
-    errorDiv.className = "contacto__mensaje-error";
+    errorDiv.className = "contact-error";
     errorDiv.textContent = mensaje;
     errorDiv.style.cssText = `
             background-color: #ef4444;
@@ -88,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("SUCCESS!", response.status, response.text);
 
         formulario.reset();
-        mensajeExito.style.display = "block";
+        mensajeExito.style.display = "flex";
 
         setTimeout(() => {
           mensajeExito.style.display = "none";
@@ -97,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(function (error) {
         console.log("FAILED...", error);
         mostrarError(
-          "Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde."
+          "Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.",
         );
       })
       .finally(function () {

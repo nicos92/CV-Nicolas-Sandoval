@@ -1,21 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const navBurger = document.getElementById("navBurger");
-    const navItems = document.getElementById("navItems");
+  const navToggle = document.getElementById("navToggle");
+  const navMenu = document.getElementById("navMenu");
+  const navbar = document.querySelector(".navbar");
 
-    navBurger.addEventListener("click", function () {
-        // Alternar la clase 'active' en el menú
-        navItems.classList.toggle("active");
+  // Toggle mobile menu
+  navToggle.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
+  });
 
-        // Opcional: cambiar el icono de hamburguesa a una X cuando el menú está abierto
-        navBurger.classList.toggle("open");
+  // Close menu when clicking a link
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      navMenu.classList.remove("active");
     });
+  });
 
-    const navItemsItem = document.querySelectorAll(".cv__nav__item");
-
-    navItemsItem.forEach(function (item) {
-        item.addEventListener("click", function () {
-            navItems.classList.toggle("active");
-            navBurger.classList.toggle("open");
-        });
-    });
+  // Add shadow to navbar on scroll
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
 });
