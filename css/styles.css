@@ -590,7 +590,6 @@ strong {
 
 .skills-slider__group {
     display: flex;
-    gap: var(--spacing-md);
     flex-shrink: 0;
     align-items: center;
 }
@@ -619,6 +618,7 @@ strong {
     border-radius: var(--radius-full);
     transition: all var(--transition-fast);
     white-space: nowrap;
+    margin-right: var(--spacing-md);
 }
 
 .skill-tag:hover {
